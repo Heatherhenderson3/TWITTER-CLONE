@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+
+<div class="content">
+    
+    <div class="logo">
+       
+        <h1>Edit</h1>
+    </div>
+    <section class="post_form">
+    <form  action="/edit/{{posts.id}}/" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="name">
+        <input class = 'name-input' type="text" placeholder="Name" name="name" value='{{posts.name}}'required/> 
+   
+    <div class="text">
+        <textarea name="body" placeholder="what is new" required>{{posts.body}}</textarea>
+    </div>
+        <label for="{{posts.name}}"></label>
+        <div class="imgd">
+        <input type="file" name="image">
+    </div>
+        {% if posts.image %}
+        <img class="edit-img" src="{{posts.image.url}}">
+        {% endif %}
+        <div class="edit-buttton">
+            <a href="/">
+            <input type="button" value="Cancel">
+        </a>
+            <input id = 'update-button'type="submit" value="Update">
+        </div>
+    </div>
+    </form>
+
+</section>
+</div>
+{% endblock %}

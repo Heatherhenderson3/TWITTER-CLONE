@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django Forum</title>
+    {% load static %}
+    <link href="{% static 'css/style.css' %}"rel="stylesheet" />
+    <link rel="icon" href="{% static 'img/twitters.png' %}" class="icon">
+</head>
+<body>
+    <div class="head">
+    <img src="{% static 'img/twitters.png' %}" alt="">
+    <h1>TWITTER CLONE</h1>
+</div>
+    {% block content %}  {{ content }} {% endblock %}
+    
+</body>
+</html>

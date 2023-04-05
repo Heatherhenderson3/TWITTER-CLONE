@@ -1,0 +1,132 @@
+/*
+common
+******************/
+
+.content {
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+h1{
+    text-align: center;
+    color: #13545f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+.head img{
+    width: 40px;
+    height: 40px;
+    padding: 15px 5px 0 0 ;
+}
+/*
+post
+*****************/
+
+.post_form {
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.post_form form input {
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #bbced1;
+}
+
+.post_form textarea {
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #bbced1;
+}
+
+.posts ul {
+    padding: 0;
+}
+
+.posts li{
+    display: flex;
+    border-bottom: 1px solid#ccc;
+    padding: 20px 40px;
+    list-style: none;
+    position: relative;
+}
+
+.posts .menu_icon{
+    width: 20px;
+    position: absolute;
+    top: 30px;
+    right: 18px;
+    
+}
+
+.posts li .menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.posts li .menu a {
+    text-decoration: none;
+}
+
+.posts li .logo{
+    flex-basis: 15%;
+}
+
+.posts li .logo img{
+    width: 60%;
+    
+}
+.posts li .name_body {
+    flex-basis: 85%;
+}
+
+.posts li .name_body .name {
+    font-weight: bold;
+}
+
+.posts li .name_body .dateline {
+    color: gray;
+}
+
+@media screen and (max-width: 500px) {
+    .posts li .name_body .name {
+        font-size: 20px;
+    }
+}
+
+img.post-border {
+    width: 100%;
+    left: 20%;
+}
+
+img{
+    width: 5%;
+    padding-top: 10px;
+}
+
+.edit-img {
+    width: 70%;
+    padding: 10px 0%;
+}
